@@ -48,14 +48,14 @@ public class Cart {
 		return new ArrayList<>(items.values());
 	}
 
-	public boolean hasItem(CartItem cartItem) {
-		for (CartItem item : getItemsAsList()) {
-			if (item.getId().trim().equals(cartItem.getId().trim())) {
-				return true;
-			}
-		}
-		return false;
-	}
+//	public boolean hasItem(CartItem cartItem) {
+//		for (CartItem item : getItemsAsList()) {
+//			if (item.getId().trim().equals(cartItem.getId().trim())) {
+//				return true;
+//			}
+//		}
+//		return false;
+//	}
 
 	public BigDecimal getGrandTotal() {
 		BigDecimal grandTotal = new BigDecimal(0);
